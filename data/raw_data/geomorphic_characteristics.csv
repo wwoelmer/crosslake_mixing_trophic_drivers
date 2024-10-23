@@ -1,0 +1,13 @@
+lake;depth_m;volume_km2;catchment_km2;ratio_km2;trophic_state
+Tarawera;87.5;2.274;150;66;O
+Rotoma;83;0.429;33.9;79;O
+Rotomahana;125;0.479;89;185;O
+Okataina;78.5;0.466;63.6;136;O
+Tikitapu;27.5;0.026;6;227;M
+Rotokakahi;32;0.077;17.5;227;M
+Okareka;33.5;0.064;17.5;275;M
+Rotoehu;13.5;0.061;42.3;693;M
+Rerewhakaaitu;15.8;0.037;40.6;1107;M
+Rotoiti;124;1.042;578;555;E
+Rotorua;44.8;0.802;482;601;E
+Okaro;18;0.003;3.6;1084;E
