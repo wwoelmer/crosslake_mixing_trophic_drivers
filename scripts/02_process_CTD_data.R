@@ -1,4 +1,5 @@
 # process CTD data for all lakes
+# CTD data come from Bay of Plenty Regional Council
 
 library(tidyverse)
 library(lubridate)
