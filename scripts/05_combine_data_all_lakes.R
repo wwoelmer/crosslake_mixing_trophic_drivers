@@ -59,6 +59,10 @@ ctd_tb <- ctd_long %>%
               names_glue = "{variable}_{.value}")
 ctd_tb$date <- as.Date(ctd_tb$date)
 
+ggplot(ctd_tb, aes(x = as.Date(date), y = temp_C_bottom, color = lake)) +
+  geom_point() +
+  facet_wrap(~lake)
+
 ## combine ctd and wq
 df <- left_join(wq, ctd_tb, by = c('lake', 'date'))
 
