@@ -147,6 +147,21 @@ stability <- glm(diff_from_none ~ mean_stability, data = out_prop, family = gaus
 summary(tli)
 summary(stability)
 
+# calculate R2
+# Fit a GLM model with Gaussian family (linear regression)
+model <- glm(response ~ predictor1 + predictor2, family = gaussian(), data = your_data)
+
+# Calculate R^2
+ss_res <- sum(residuals(tli)^2)
+ss_tot <- sum((out_prop$diff_from_none - mean(out_prop$diff_from_none))^2)
+r2 <- 1 - (ss_res / ss_tot)
+r2
+
+ss_res <- sum(residuals(stability)^2)
+ss_tot <- sum((out_prop$diff_from_none - mean(out_prop$diff_from_none))^2)
+r2 <- 1 - (ss_res / ss_tot)
+r2
+
 
 ####################################################################################
 # also look at the time series of AIC
